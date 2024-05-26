@@ -6,6 +6,7 @@ function HomePage() {
     <div>
       <h1>Home Page</h1>
       <Link to="/about">About</Link>
+      <Link to="/cv">CV</Link>
       <Link to="/contact">Contact</Link>
       <Link to="/projects">Projects</Link>
     </div>
