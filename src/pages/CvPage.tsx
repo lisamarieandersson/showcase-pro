@@ -3,7 +3,7 @@
 function CvPage() {
   return (
     <div>
-      <h1>CV Page</h1>
+      <h1>CV</h1>
     </div>
   );
 }
