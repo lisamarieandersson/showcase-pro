@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { createRoutesFromElements, Route } from 'react-router';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import './index.scss';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import CvPage from './pages/CvPage';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
+import './styles/index.scss';
 
 /* ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
