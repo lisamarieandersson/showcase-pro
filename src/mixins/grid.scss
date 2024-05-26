@@ -1,0 +1,9 @@
+@import './content-width';
+
+@mixin grid {
+  @include content-width;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $grid-gutter;
+}

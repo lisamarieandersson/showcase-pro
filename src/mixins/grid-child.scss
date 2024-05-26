@@ -1,0 +1,10 @@
+@mixin grid-child($start: 12, $span: 0) {
+    @if $span == 0 {
+      grid-column: span $start;
+    }
+  
+    @if $span != 0 {
+      grid-column: $start / span $span;
+    }
+  }
+  
