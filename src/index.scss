@@ -1,0 +1,50 @@
+@import './mixins/content-width.scss';
+
+/* General colors */
+$color-beige: #f7f2eb;
+$color-blue: #334eac;
+
+/* Colors for background, text etc. */
+$color-background: $color-beige;
+$color-text: $color-blue;
+
+/* Layout */
+$grid-gutter: 2.5rem; /* 40px */
+$page-margin: 3.75rem; /* 60px */
+$page-margin-small: 2rem; /* 32px */
+
+/* Spacing */
+$spacing-xxs: 1rem; /* 16px */
+$spacing-xs: 1.5rem; /* 24px */
+$spacing-sm: 2rem; /* 32px */
+$spacing-md: 3rem; /* 48px */
+$spacing-lg: 4rem; /* 64px */
+$spacing-xl: 6.25rem; /* 100px */
+$spacing-xxl: 12.5rem; /* 200px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @include content-width;
+  background-color: $color-background;
+  color: $color-text;
+}
