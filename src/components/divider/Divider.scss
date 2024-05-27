@@ -1,0 +1,9 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
+
+.divider {
+  height: 1px;
+  background-color: $color-blue;
+  width: 100%;
+}
