@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { createRoutesFromElements, Route } from 'react-router';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import CvPage from './pages/CvPage';
+import AboutPage from './pages/about-page/AboutPage';
+import ContactPage from './pages/contact-page/ContactPage';
+import CvPage from './pages/cv-page/CvPage';
 import HomePage from './pages/home-page/HomePage';
-import ProjectPage from './pages/ProjectPage';
+import ProjectPage from './pages/project-page/ProjectPage';
 import './styles/index.scss';
 
 /* ReactDOM.createRoot(document.getElementById('root')!).render(
