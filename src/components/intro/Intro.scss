@@ -4,7 +4,7 @@
 
 .intro {
   @include grid-child(1, 5);
-  margin-block-start: $spacing-xs;
+  background-color: lightskyblue;
 
   &__name {
     font-family: 'Crake Bold', serif;
