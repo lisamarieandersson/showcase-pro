@@ -6,7 +6,7 @@ import './index.css';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import CvPage from './pages/CvPage';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/home-page/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import './styles/index.scss';
 
