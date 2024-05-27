@@ -1,5 +1,5 @@
 // HomePage.tsx
-import NavigationMenu from '../components/navigation-menu/NavigationMenu';
+import NavigationMenu from '../../components/navigation-menu/NavigationMenu';
 
 function HomePage() {
   return (
