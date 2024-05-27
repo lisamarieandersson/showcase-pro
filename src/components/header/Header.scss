@@ -1,0 +1,8 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
+
+.header {
+  @include grid-child(1, 12);
+  margin-block-start: $grid-gutter;
+}
