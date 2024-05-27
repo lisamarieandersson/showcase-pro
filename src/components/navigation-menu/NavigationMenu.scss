@@ -1,0 +1,17 @@
+@import '../../styles/index.scss';
+
+.navigation-menu {
+  &__list {
+    list-style-type: none;
+    color: $color-text;
+  }
+
+  &__item {
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
