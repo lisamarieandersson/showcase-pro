@@ -1,0 +1,9 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
+
+.social-icons {
+  display: flex;
+  gap: $spacing-xxs;
+  margin-block-start: $spacing-xxs;
+}
