@@ -1,4 +1,6 @@
 // HomePage.tsx
+import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
 import Intro from '../../components/intro/Intro';
 import NavigationMenu from '../../components/navigation-menu/NavigationMenu';
 import './HomePage.scss';
@@ -6,9 +8,10 @@ import './HomePage.scss';
 function HomePage() {
   return (
     <div className="homepage">
-      {/* <h1>Home</h1> */}
+      <Header />
       <Intro />
       <NavigationMenu />
+      <Footer />
     </div>
   );
 }
