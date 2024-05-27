@@ -3,7 +3,7 @@
 @import '../../styles/mixins/grid-child.scss';
 
 .navigation-menu {
-  @include grid-child(6, 7);
+  @include grid-child(7, 6);
 
   &__list {
     list-style-type: none;
