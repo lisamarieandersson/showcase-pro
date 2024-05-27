@@ -1,0 +1,8 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/content-width.scss';
+@import '../../styles/mixins/grid.scss';
+
+.homepage {
+  @include content-width;
+  @include grid;
+}
