@@ -4,7 +4,6 @@
 
 .intro {
   @include grid-child(1, 5);
-  background-color: lightskyblue;
 
   &__name {
     font-family: 'Crake Bold', serif;
