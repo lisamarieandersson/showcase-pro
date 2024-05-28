@@ -5,6 +5,10 @@
 .navigation-menu {
   @include grid-child(7, 6);
 
+  @media (max-width: 768px) {
+    @include grid-child(1, 12);
+  }
+
   &__list {
     list-style-type: none;
     color: $color-text;

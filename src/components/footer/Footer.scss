@@ -18,4 +18,15 @@
   &__copyright {
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    &__copyright {
+      margin-block-start: $spacing-xs;
+      text-align: left;
+    }
+  }
 }

@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 768px) {
+    @include grid-child(1, 12);
+  }
+
   &__name {
     font-family: 'Crake Bold', serif;
     font-size: 2rem;
