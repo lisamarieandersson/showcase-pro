@@ -2,7 +2,7 @@
 @import '../../styles/mixins/content-width.scss';
 @import '../../styles/mixins/grid.scss';
 
-.homepage {
+.home-page {
   @include content-width;
   @include grid;
   min-height: 100vh;
