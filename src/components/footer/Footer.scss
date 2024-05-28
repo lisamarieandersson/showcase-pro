@@ -1,8 +1,21 @@
 @import '../../styles/index.scss';
 @import '../../styles/mixins/grid.scss';
 @import '../../styles/mixins/grid-child.scss';
+@import '../../styles/mixins/inner-grid.scss';
 
 .footer {
   @include grid-child(1, 12);
   margin-block-end: $grid-gutter;
+
+  &__content {
+    margin-block-start: $spacing-xs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+  }
+
+  &__copyright {
+    text-align: center;
+  }
 }

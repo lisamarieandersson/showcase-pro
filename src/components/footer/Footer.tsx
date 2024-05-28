@@ -6,7 +6,12 @@ function Footer() {
   return (
     <div className="footer">
       <Divider />
-      <SocialIcons/>
+      <div className="footer__content">
+        <SocialIcons />
+        <p className="footer__copyright">
+          &copy; {new Date().getFullYear()} Lisa Marie Andersson
+        </p>
+      </div>
     </div>
   );
 }
