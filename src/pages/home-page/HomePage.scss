@@ -5,4 +5,5 @@
 .homepage {
   @include content-width;
   @include grid;
+  min-height: 100vh;
 }
