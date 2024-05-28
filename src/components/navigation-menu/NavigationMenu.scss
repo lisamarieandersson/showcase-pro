@@ -1,6 +1,7 @@
 @import '../../styles/index.scss';
 @import '../../styles/mixins/grid.scss';
 @import '../../styles/mixins/grid-child.scss';
+@import '../../styles/mixins/text-styles.scss';
 
 .navigation-menu {
   @include grid-child(7, 6);
@@ -10,13 +11,8 @@
   }
 
   &__list {
+    @include menu-text;
     list-style-type: none;
-    color: $color-text;
-    font-size: 5.625rem;
-  }
-
-  &__item {
-    text-transform: uppercase;
   }
 
   &__link {
