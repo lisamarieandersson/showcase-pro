@@ -1,6 +1,7 @@
 @import '../../styles/index.scss';
 @import '../../styles/mixins/grid.scss';
 @import '../../styles/mixins/grid-child.scss';
+@import '../../styles/mixins/text-styles.scss';
 
 .intro {
   @include grid-child(2, 4);
@@ -8,19 +9,16 @@
   flex-direction: column;
   justify-content: center;
 
-  @media (max-width: 768px) {
-    @include grid-child(1, 12);
-  }
-
   &__name {
-    font-family: 'Crake Bold', serif;
-    font-size: 2rem;
+    @include title-text;
   }
 
   &__job-title {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    @include feature-text;
     margin-block-start: $spacing-xxs;
-    font-size: 1.125rem;
+  }
+
+  @media (max-width: 768px) {
+    @include grid-child(1, 12);
   }
 }
