@@ -1,8 +1,9 @@
 // AboutPage.tsx
+import './AboutPage.scss';
 
 function AboutPage() {
   return (
-    <div>
+    <div className="about-page">
       <h1>About</h1>
     </div>
   );

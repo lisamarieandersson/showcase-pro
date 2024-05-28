@@ -1,0 +1,9 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/content-width.scss';
+@import '../../styles/mixins/grid.scss';
+
+.about-page {
+  @include content-width;
+  @include grid;
+  min-height: 100vh;
+}
