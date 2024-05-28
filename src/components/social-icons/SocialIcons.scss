@@ -6,4 +6,21 @@
   display: flex;
   gap: $spacing-xxs;
   margin-block-start: $spacing-xxs;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
 }
