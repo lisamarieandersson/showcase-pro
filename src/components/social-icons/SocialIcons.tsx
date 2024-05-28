@@ -10,7 +10,7 @@ function SocialIcons() {
   return (
     <div className="social-icons">
       {icons.map((icon) => (
-        <img
+        <img className="social-icons__icon"
           key={icon.name}
           src={icon.svgPath}
           alt={icon.name}
