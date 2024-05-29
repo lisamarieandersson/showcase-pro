@@ -10,8 +10,8 @@
 
   &__content {
     margin-block-start: $spacing-xs;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     @include body-text;
   }
@@ -22,7 +22,9 @@
 
   @media (max-width: 768px) {
     &__content {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
     &__copyright {
