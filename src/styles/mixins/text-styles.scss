@@ -1,4 +1,11 @@
-@mixin title-text {
+@mixin h1-large {
+  font-family: 'Crake Light', serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+@mixin h1 {
   font-family: 'Crake Bold', serif;
   font-weight: 500;
   font-size: 2rem;
@@ -33,4 +40,3 @@
   font-size: 1rem;
   line-height: 1.5;
 }
-
