@@ -8,6 +8,7 @@ function Footer() {
       <Divider />
       <div className="footer__content">
         <SocialIcons />
+        {/* <SocialLinks /> */}
         <p className="footer__copyright">
           &copy; {new Date().getFullYear()} Lisa Marie Andersson
         </p>
