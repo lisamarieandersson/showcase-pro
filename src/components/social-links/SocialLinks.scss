@@ -1,0 +1,8 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
+@import '../../styles/mixins/text-styles.scss';
+
+.social-links {
+    @include body-text;
+}
