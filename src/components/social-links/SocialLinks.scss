@@ -4,5 +4,20 @@
 @import '../../styles/mixins/text-styles.scss';
 
 .social-links {
-    @include body-text;
+  @include link-text;
+  display: flex;
+  gap: $spacing-sm;
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+  }
 }
