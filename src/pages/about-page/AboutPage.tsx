@@ -4,7 +4,7 @@ import './AboutPage.scss';
 function AboutPage() {
   return (
     <div className="about-page">
-      <h1>About</h1>
+      <h1 className="about-page__heading">About</h1>
     </div>
   );
 }
