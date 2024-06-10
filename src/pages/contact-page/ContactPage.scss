@@ -11,4 +11,9 @@
   &__heading {
     @include h1-large;
   }
+
+  &__contact {
+    @include feature-text;
+    margin-block-start: $spacing-xxs;
+  }
 }
