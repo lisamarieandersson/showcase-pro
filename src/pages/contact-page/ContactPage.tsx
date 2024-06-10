@@ -8,6 +8,7 @@ function ContactPage() {
     <div className="contact-page">
       <Header />
       <h1 className="contact-page__heading">Hello.</h1>
+      <p className="contact-page__contact">Get in touch.</p>
       <Footer />
     </div>
   );
