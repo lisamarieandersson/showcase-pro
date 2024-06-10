@@ -1,21 +1,21 @@
 @mixin h1-large {
   font-family: 'Crake Light', serif;
   font-weight: 300;
-  font-size: 4.5rem;
+  font-size: 4.5rem; /* 72px */
   line-height: 1.2;
 }
 
 @mixin h1 {
   font-family: 'Crake Bold', serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
   line-height: 1.2;
 }
 
 @mixin menu-text {
   font-family: 'Crake Light', serif;
   font-weight: 300;
-  font-size: 5.625rem;
+  font-size: 5.625rem; /* 90px */
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -23,21 +23,21 @@
 @mixin body-text {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1rem; /* 16px */
   line-height: 1.5;
 }
 
 @mixin feature-text {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /* 18px */
   line-height: 1.5;
 }
 
 @mixin highlight-text {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1rem; /* 16px */
   line-height: 1.5;
 }
 
