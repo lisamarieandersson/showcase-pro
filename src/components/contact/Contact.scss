@@ -1,0 +1,24 @@
+@import '../../styles/index.scss';
+@import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
+@import '../../styles/mixins/text-styles.scss';
+
+.contact {
+  @include grid-child(2, 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    @include h1-large;
+  }
+
+  &__text {
+    @include feature-text;
+    margin-block-start: $spacing-xxs;
+  }
+
+  @media (max-width: 768px) {
+    @include grid-child(1, 12);
+  }
+}
