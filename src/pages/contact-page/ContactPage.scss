@@ -7,13 +7,4 @@
   @include content-width;
   @include grid;
   min-height: 100vh;
-
-  &__heading {
-    @include h1-large;
-  }
-
-  &__contact {
-    @include feature-text;
-    margin-block-start: $spacing-xxs;
-  }
 }
