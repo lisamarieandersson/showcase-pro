@@ -4,10 +4,9 @@
 @import '../../styles/mixins/text-styles.scss';
 
 .contact {
-  @include grid-child(2, 4);
+  @include grid-child(2, 5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   &__heading {
     @include h1-large;
@@ -16,6 +15,15 @@
   &__text {
     @include feature-text;
     margin-block-start: $spacing-xxs;
+  }
+
+  &__email-text {
+    @include feature-text;
+    margin-block-start: $spacing-xxs;
+  }
+
+  &__email {
+    @include highlight-text;
   }
 
   @media (max-width: 768px) {
