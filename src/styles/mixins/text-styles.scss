@@ -37,15 +37,26 @@
 @mixin highlight-text {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 1rem; /* 16px */
+  font-size: 1.125rem; /* 18px */
   line-height: 1.5;
   text-decoration: none;
+  color: inherit;
 }
 
-@mixin link-text {
+@mixin standard-link {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5;
+  color: inherit;
+}
+
+/* For alternative link component instead of icons */
+@mixin uppercase-link {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 1rem; /* 16px */
   line-height: 1.5;
   text-transform: uppercase;
+  color: inherit;
 }
