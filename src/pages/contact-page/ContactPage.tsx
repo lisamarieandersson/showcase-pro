@@ -9,7 +9,7 @@ function ContactPage() {
     <div className="contact-page">
       <Header />
       <Contact />
-      <Footer />
+      <Footer showSocialIcons={false} />
     </div>
   );
 }

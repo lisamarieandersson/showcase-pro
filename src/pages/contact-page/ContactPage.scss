@@ -1,10 +1,13 @@
 @import '../../styles/index.scss';
+@import '../../styles/variables.scss';
 @import '../../styles/mixins/content-width.scss';
 @import '../../styles/mixins/grid.scss';
+@import '../../styles/mixins/grid-child.scss';
 @import '../../styles/mixins/text-styles.scss';
 
 .contact-page {
   @include content-width;
   @include grid;
   min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
