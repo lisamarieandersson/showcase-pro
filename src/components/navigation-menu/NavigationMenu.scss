@@ -1,14 +1,15 @@
 @import '../../styles/index.scss';
+@import '../../styles/variables.scss';
 @import '../../styles/mixins/grid.scss';
 @import '../../styles/mixins/grid-child.scss';
 @import '../../styles/mixins/text-styles.scss';
 
 .navigation-menu {
   @include grid-child(7, 6);
-
-  @media (max-width: 768px) {
-    @include grid-child(1, 12);
-  }
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__list {
     @include menu-text;
@@ -24,5 +25,11 @@
       transform: translateX(10px);
       transition: transform 0.3s ease-in-out;
     }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    @include grid-child(1, 12);
+    grid-row: 3;
+    justify-content: flex-start;
   }
 }
