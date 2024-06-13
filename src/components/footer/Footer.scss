@@ -1,4 +1,5 @@
 @import '../../styles/index.scss';
+@import '../../styles/variables.scss';
 @import '../../styles/mixins/grid.scss';
 @import '../../styles/mixins/grid-child.scss';
 @import '../../styles/mixins/inner-grid.scss';
@@ -16,11 +17,7 @@
     @include body-text;
   }
 
-  &__copyright {
-    text-align: center;
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-tablet) {
     &__content {
       flex-direction: column;
       justify-content: flex-start;
