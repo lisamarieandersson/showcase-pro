@@ -1,8 +1,10 @@
+@import '../../styles/variables.scss';
+
 @mixin content-width {
   width: 100%;
   padding-inline: max($page-margin, calc(50vw - (1392px / 2) + $page-margin));
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-tablet) {
     padding-inline: max(
       $page-margin-small,
       calc(50vw - (1392px / 2) + $page-margin-small)
