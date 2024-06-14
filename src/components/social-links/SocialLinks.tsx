@@ -1,6 +1,5 @@
 import './SocialLinks.scss';
 
-
 const links = [
   {
     name: 'Github',
@@ -19,17 +18,22 @@ const links = [
 function SocialLinks() {
   return (
     <div className="social-links">
-      {links.map((link) => (
-        <a
-          key={link.name}
-          className="social-links__link"
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {link.name} <img className="social-links__icon" src="/icons/arrow-icon.svg" alt="" />
-        </a>
-      ))}
+        {links.map((link) => (
+          <a
+            key={link.name}
+            className="social-links__link"
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.name}{' '}
+            <img
+              className="social-links__icon"
+              src="/icons/arrow-icon.svg"
+              alt=""
+            />
+          </a>
+        ))}
     </div>
   );
 }

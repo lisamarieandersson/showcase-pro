@@ -1,20 +1,23 @@
 @import '../../styles/main.scss';
 
 .social-links {
-  @include uppercase-link;
   display: flex;
-  gap: $spacing-sm;
+  align-items: baseline;
+  gap: $spacing-xs;
+  margin-block-start: $spacing-xxs;
 
   &__link {
-    color: inherit;
-    text-decoration: none;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
+    @include uppercase-link;
   }
 
   &__icon {
     width: 11px;
     height: 11px;
+  }
+
+  @media (max-width: $breakpoint-small-mobile) {
+    margin-block-start: $spacing-xs;
+    gap: $spacing-xxs;
+    flex-direction: column;
   }
 }
