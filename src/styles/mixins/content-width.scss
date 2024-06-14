@@ -2,12 +2,27 @@
 
 @mixin content-width {
   width: 100%;
-  padding-inline: max($page-margin, calc(50vw - (1392px / 2) + $page-margin));
+  padding-inline: max(
+    $page-margin-large,
+    calc(50vw - (1392px / 2) + $page-margin-large)
+  );
 
   @media (max-width: $breakpoint-tablet) {
     padding-inline: max(
-      $page-margin-small,
-      calc(50vw - (1392px / 2) + $page-margin-small)
+      $page-margin-medium,
+      calc(50vw - (768px / 2) + $page-margin-medium)
     );
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding-inline: $page-margin-small;
+  }
+
+  @media (max-width: $breakpoint-small-mobile) {
+    padding-inline: $page-margin-x-small;
+  }
+
+  @media (max-width: $breakpoint-extra-small-mobile) {
+    padding-inline: $page-margin-x-small;
   }
 }
