@@ -16,22 +16,10 @@
     margin-block-start: $spacing-xxs;
   }
 
-  &__email,
-  &__internet {
-    display: flex;
-    flex-direction: row;
+  &__email {
     margin-block-start: $spacing-xxs;
-    gap: 0.5rem;
-
-    &-text {
-      @include feature-text;
-    }
 
     &-address {
-      @include highlight-text;
-    }
-
-    &-link {
       @include standard-link;
     }
   }
