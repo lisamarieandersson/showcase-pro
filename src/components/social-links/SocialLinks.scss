@@ -1,7 +1,4 @@
-@import '../../styles/index.scss';
-@import '../../styles/mixins/grid.scss';
-@import '../../styles/mixins/grid-child.scss';
-@import '../../styles/mixins/text-styles.scss';
+@import '../../styles/main.scss';
 
 .social-links {
   @include uppercase-link;

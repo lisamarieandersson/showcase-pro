@@ -1,9 +1,4 @@
-@import '../../styles/index.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/mixins/content-width.scss';
-@import '../../styles/mixins/grid.scss';
-@import '../../styles/mixins/grid-child.scss';
-@import '../../styles/mixins/text-styles.scss';
+@import '../../styles/main.scss';
 
 .contact-page {
   @include content-width;

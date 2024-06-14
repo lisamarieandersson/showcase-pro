@@ -1,7 +1,4 @@
-@import '../../styles/index.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/mixins/content-width.scss';
-@import '../../styles/mixins/grid.scss';
+@import '../../styles/main.scss';
 
 .home-page {
   @include content-width;

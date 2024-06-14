@@ -1,8 +1,4 @@
-@import '../../styles/index.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/mixins/grid.scss';
-@import '../../styles/mixins/grid-child.scss';
-@import '../../styles/mixins/text-styles.scss';
+@import '../../styles/main.scss';
 
 .intro {
   @include grid-child(2, 4);

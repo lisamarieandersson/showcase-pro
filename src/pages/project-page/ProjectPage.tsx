@@ -1,4 +1,5 @@
 //ProjectPage.tsx
+import './ProjectPage.scss';
 
 function ProjectPage() {
   return (
