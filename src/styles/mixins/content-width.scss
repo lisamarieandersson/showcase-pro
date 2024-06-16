@@ -17,12 +17,4 @@
   @media (max-width: $breakpoint-mobile) {
     padding-inline: $page-margin-small;
   }
-
-  @media (max-width: $breakpoint-small-mobile) {
-    padding-inline: $page-margin-x-small;
-  }
-
-  @media (max-width: $breakpoint-extra-small-mobile) {
-    padding-inline: $page-margin-x-small;
-  }
 }
