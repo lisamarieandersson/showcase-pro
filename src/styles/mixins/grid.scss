@@ -6,4 +6,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: $grid-gutter;
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: $grid-gutter-small;
+  }
 }
