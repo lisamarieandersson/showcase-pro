@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './DropDownMenu.scss';
 import hamburgerIcon from '/icons/hamburger-menu-icon.svg';
 
@@ -17,15 +18,31 @@ function DropDownMenu() {
             isOpen ? 'dropdown-menu__content--open' : ''
           }`}
         >
-          <ul>
-            <li>
-              <a href="#">Link 1</a>
+          <ul className="dropdown-menu__list">
+            <li className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to="/">
+                Home
+              </Link>
             </li>
-            <li>
-              <a href="#">Link 2</a>
+            <li className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to="/about">
+                About
+              </Link>
             </li>
-            <li>
-              <a href="#">Link 3</a>
+            <li className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to="/cv">
+                CV
+              </Link>
+            </li>
+            <li className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to="/contact">
+                Contact
+              </Link>
+            </li>
+            <li className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to="/projects">
+                Projects
+              </Link>
             </li>
           </ul>
         </nav>
