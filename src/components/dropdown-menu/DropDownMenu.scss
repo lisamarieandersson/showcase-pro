@@ -15,15 +15,21 @@
   }
 
   &__content {
-    display: none;
-    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0; // Fully transparent
+    position: fixed;
     background-color: $color-background;
     min-width: 100vw;
     z-index: 1;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out,
+      visibility 0.4s;
   }
 
   &__content--open {
-    display: block;
+    opacity: 1; 
+    max-height: 30rem; 
+    transition-delay: 0s;
   }
 
   &__list {
