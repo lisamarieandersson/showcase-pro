@@ -27,13 +27,17 @@
   }
 
   &__content--open {
-    opacity: 1; 
-    max-height: 30rem; 
+    opacity: 1;
+    max-height: 30rem;
     transition-delay: 0s;
   }
 
   &__list {
-    @include menu-text;
+    margin-block: $spacing-sm;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    @include dropdown-menu-text;
   }
 
   &__link {
