@@ -16,6 +16,14 @@ function DropDownMenu() {
     }
   }, [isOpen]);
 
+  const links = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/cv', label: 'CV' },
+    { path: '/contact', label: 'Contact' },
+    { path: '/projects', label: 'Projects' },
+  ];
+
   return (
     <div className="dropdown-menu">
       <button className="dropdown-menu__button" onClick={toggleOpen}>
@@ -27,34 +35,16 @@ function DropDownMenu() {
           isOpen ? 'dropdown-menu__content--open' : ''
         }`}
       >
-          <ul className="dropdown-menu__list">
-            <li className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to="/">
-                Home
+        <ul className="dropdown-menu__list">
+          {links.map((link, index) => (
+            <li key={index} className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to={link.path}>
+                {link.label}
               </Link>
             </li>
-            <li className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to="/about">
-                About
-              </Link>
-            </li>
-            <li className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to="/cv">
-                CV
-              </Link>
-            </li>
-            <li className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to="/contact">
-                Contact
-              </Link>
-            </li>
-            <li className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to="/projects">
-                Projects
-              </Link>
-            </li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }
