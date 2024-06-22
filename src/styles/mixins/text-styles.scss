@@ -21,6 +21,14 @@
   list-style-type: none;
 }
 
+@mixin dropdown-menu-text {
+  font-family: 'Crake Light', serif;
+  font-weight: 300;
+  font-size: 3rem; /* 48px */
+  line-height: 1.2;
+  list-style-type: none;
+}
+
 @mixin body-text {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
