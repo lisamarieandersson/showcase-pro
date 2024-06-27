@@ -1,1 +1,12 @@
 @import '../../styles/main.scss';
+
+.project-page {
+  @include content-width;
+  @include grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  &__heading {
+    @include h1-large;
+  }
+}
