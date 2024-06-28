@@ -16,6 +16,7 @@ function DropDownMenu() {
     }
   }, [isOpen]);
 
+  // Dropdown menu links
   const links = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
