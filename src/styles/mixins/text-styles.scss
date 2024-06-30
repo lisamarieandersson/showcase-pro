@@ -98,3 +98,15 @@
   color: inherit;
   text-decoration: none;
 }
+
+@mixin link-style {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  /* //TODO: Add this as its own style */
+  &:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+}
