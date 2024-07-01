@@ -6,15 +6,11 @@ import './index.css';
 import AboutPage from './pages/about-page/AboutPage';
 import ContactPage from './pages/contact-page/ContactPage';
 import CvPage from './pages/cv-page/CvPage';
+import CvSwedishPage from './pages/cv-page/CvSwedishPage';
+import CvEnglishPage from './pages/cv-page/CvEnglishPage';
 import HomePage from './pages/home-page/HomePage';
 import ProjectPage from './pages/project-page/ProjectPage';
 import './styles/index.scss';
-
-/* ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-) */
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +18,8 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="about" element={<AboutPage />} />
       <Route path="cv" element={<CvPage />} />
+      <Route path="cv/swedish" element={<CvSwedishPage />} />
+      <Route path="cv/english" element={<CvEnglishPage />} />
       <Route path="contact" element={<ContactPage />} />
       <Route path="projects" element={<ProjectPage />} />
     </Route>
