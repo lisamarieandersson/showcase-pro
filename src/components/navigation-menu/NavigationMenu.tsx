@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
 import './NavigationMenu.scss';
 
+const links = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/cv', label: 'CV' },
+  { path: '/contact', label: 'Contact' },
+  { path: '/projects', label: 'Projects' },
+];
+
 function NavigationMenu() {
   return (
     <nav className="navigation-menu">
       <ul className="navigation-menu__list">
-        <li className="navigation-menu__item">
-          <Link className="navigation-menu__link" to="/about">
-            About
-          </Link>
-        </li>
-        <li className="navigation-menu__item">
-          <Link className="navigation-menu__link" to="/cv">
-            CV
-          </Link>
-        </li>
-        <li className="navigation-menu__item">
-          <Link className="navigation-menu__link" to="/contact">
-            Contact
-          </Link>
-        </li>
-        <li className="navigation-menu__item">
-          <Link className="navigation-menu__link" to="/projects">
-            Projects
-          </Link>
-        </li>
+      {links.map((link, index) => (
+            <li key={index} className="dropdown-menu__item">
+              <Link className="dropdown-menu__link" to={link.path}>
+                {link.label}
+              </Link>
+            </li>
+          ))}
       </ul>
     </nav>
   );
