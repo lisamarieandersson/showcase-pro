@@ -1,10 +1,16 @@
 import Divider from '../divider/Divider';
 import './Header.scss';
+import DropDownMenu from '../dropdown-menu/DropDownMenu';
 
-function Header() {
+interface HeaderProps {
+  showDropDownMenu?: boolean;
+}
+
+
+function Header({showDropDownMenu = true}: HeaderProps) {
   return (
     <div className="header">
-      {/*       <DropDownMenu /> */}
+      {showDropDownMenu && <DropDownMenu />}
       <Divider />
     </div>
   );
