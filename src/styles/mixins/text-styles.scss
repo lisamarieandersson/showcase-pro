@@ -1,8 +1,18 @@
+/* Text */
+
 @mixin h1-large {
   font-family: 'Crake Light', serif;
   font-weight: 300;
   font-size: 6.25rem; /* 100px */
   line-height: 1.2;
+}
+
+@mixin h1-large-uppercase {
+  font-family: 'Crake Light', serif;
+  font-weight: 300;
+  font-size: 6.25rem; /* 100px */
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 @mixin h1 {
@@ -19,6 +29,14 @@
   line-height: 1.2;
   text-transform: uppercase;
   list-style-type: none;
+
+  @media (max-width: $breakpoint-small-mobile) {
+    font-size: 4rem; /* 64px */
+  }
+
+  @media (max-width: $breakpoint-extra-small-mobile) {
+    font-size: 3.375rem; /* 52px */
+  }
 }
 
 @mixin dropdown-menu-text {
@@ -54,30 +72,6 @@
 
 /* Links */
 
-/* Hover effect for links */
-@mixin underline-effect {
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: currentColor;
-    transform-origin: right;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
-
 @mixin standard-link {
   @include underline-effect;
   font-family: 'Jost', sans-serif;
@@ -103,8 +97,34 @@
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
 
-  /* //TODO: Add this as its own style */
+/* Hover and underline effects for links */
+
+@mixin underline-effect {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@mixin hover-effect {
   &:hover {
     transform: translateX(10px);
     transition: transform 0.3s ease-in-out;
