@@ -42,5 +42,6 @@
 
   &__link {
     @include link-style;
+    @include hover-effect;
   }
 }
