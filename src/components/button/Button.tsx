@@ -1,13 +1,11 @@
-import './Button.scss'; 
+import './Button.scss';
 
 interface ButtonProps {
-    label: string;
+  label: string;
 }
 
-function Button({label}: ButtonProps) {
-    return(
-        <button className='button'>{label}</button>
-    );
+function Button({ label }: ButtonProps) {
+  return <button className="button">{label}</button>;
 }
 
 export default Button;
