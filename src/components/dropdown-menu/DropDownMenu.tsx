@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './DropDownMenu.scss';
 import hamburgerIcon from '/icons/hamburger-menu-icon.svg';
 
+//TODO: Make dropdown close if user clicks on current link for page
+
 function DropDownMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -31,9 +33,8 @@ function DropDownMenu() {
       </button>
       <nav
         ref={contentRef}
-        className={`dropdown-menu__content ${
-          isOpen ? 'dropdown-menu__content--open' : ''
-        }`}
+        className={`dropdown-menu__content ${isOpen ? 'dropdown-menu__content--open' : ''
+          }`}
       >
         <ul className="dropdown-menu__list">
           {links.map((link, index) => (
