@@ -2,5 +2,5 @@
 
 .header {
   @include grid-child(1, 12);
-  margin-block-start: $spacing-xs;
+  margin-block-start: $spacing-sm;
 }
