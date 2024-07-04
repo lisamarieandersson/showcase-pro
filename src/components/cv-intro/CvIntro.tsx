@@ -5,8 +5,8 @@ import './CvIntro.scss';
 function CvIntro() {
     return (<div className="cv-intro">
         <h1 className="cv-intro__heading">CV</h1>
-        <Button label="Swedish" />
-        <Button label="English" />
+        <Button label="Swedish" to={"/cv/swedish"} />
+        <Button label="English" to={"/cv/english"} />
     </div>);
 }
 
