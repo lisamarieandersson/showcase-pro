@@ -1,17 +1,20 @@
 @import '../../styles/main.scss';
 
-//TODO: Add correct styling and mixin for label
 .button {
   background-color: transparent;
   border: 1px solid $color-blue;
   cursor: pointer;
   padding: 0;
   margin: 0;
-  @include button-text;
+  @include button-label;
+  @include link-style;
   //TODO: add gap instead of margin block?
   margin-block: $spacing-xxs;
   height: 3.75rem; /* 60px */
   width: 15.625rem; /* 250px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: $color-blue;
