@@ -1,5 +1,6 @@
 import './CvEnglishPage.scss';
 
+//TODO: Add English version of CV
 function CvEnglishPage() {
   return (
     <div className="cv-english-page">
