@@ -12,4 +12,24 @@
     min-width: 100%;
     min-height: 100%;
   }
+
+  &__images {
+    display: none;
+  }
+
+  .cv-swedish-page__images img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .cv-swedish-page__images {
+      display: block;
+    }
+
+    .cv-swedish-page__iframe {
+      display: none;
+    }
+  }
 }
