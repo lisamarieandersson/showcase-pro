@@ -4,10 +4,10 @@ function Presentation() {
     return (
         <div className="presentation">
             <h1 className="presentation__heading">About</h1>
-            <h2 className="presentation__intro">I'm Lisa Marie.
+            <h2 className="presentation__intro">Hi, I'm Lisa Marie.
                 Newly graduated Front End Developer with previous experience in design, home furnishing,
                 entrepreneurship and customer relations. </h2>
-            <p className="presentation__text">Design has captivated me since childhood. Having operated
+            <p className="presentation__text">I've been passionate about design for my entire life. Having operated
                 my own business in the design sector for nearly a decade, and gaining years of sales and customer
                 service expertise through roles at niched companies like Très Bien and Fine Little Day, as well as
                 notable large-scale organizations including IKEA and H&M Group. This wealth of experience, as well
