@@ -1,10 +1,9 @@
 @import '../../styles/main.scss';
 
 .dropdown-menu {
-  position: relative;
-  display: inline-block;
-  margin-block-end: $spacing-xs;
+  padding-block-end: $spacing-xs;
   transition: height 0.3s ease-in-out;
+  display: inline-block;
 
   &__button {
     background-color: transparent;
