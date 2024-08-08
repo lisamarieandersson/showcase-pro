@@ -3,6 +3,7 @@
 .footer {
   @include grid-child(1, 12);
   margin-block-end: $spacing-xs;
+  grid-row: 3;
 
   &__content {
     margin-block-start: $spacing-xs;
