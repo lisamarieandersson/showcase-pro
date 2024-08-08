@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './DropDownMenu.scss';
 import hamburgerIcon from '/icons/hamburger-menu-icon.svg';
-
-//TODO: Make dropdown close if user clicks on current link for page
 
 function DropDownMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
   const toggleOpen = () => setIsOpen(!isOpen);
 
   useEffect(() => {
@@ -26,6 +25,12 @@ function DropDownMenu() {
     { path: '/projects', label: 'Projects' },
   ];
 
+  const handleLinkClick = (path: string) => {
+    if (location.pathname === path) {
+      setIsOpen(false); // Close the menu if the user clicks on the current link
+    }
+  };
+
   return (
     <div className="dropdown-menu">
       <button className="dropdown-menu__button" onClick={toggleOpen}>
@@ -39,7 +44,9 @@ function DropDownMenu() {
         <ul className="dropdown-menu__list">
           {links.map((link, index) => (
             <li key={index} className="dropdown-menu__item">
-              <Link className="dropdown-menu__link" to={link.path}>
+              <Link className="dropdown-menu__link" to={link.path}
+                onClick={() => handleLinkClick(link.path)}
+              >
                 {link.label}
               </Link>
             </li>
