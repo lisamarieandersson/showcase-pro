@@ -1,7 +1,7 @@
 @import '../../styles/main.scss';
 
 .contact {
-  @include grid-child(2, 6);
+  @include grid-child(1, 6);
   grid-row: 2;
   display: flex;
   flex-direction: column;
