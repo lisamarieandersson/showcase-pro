@@ -1,6 +1,5 @@
 @import '../../styles/main.scss';
 
-//TODO: Add a variable for the height of the header
 .header {
   @include content-width;
   padding-block-start: $spacing-sm;
@@ -10,6 +9,6 @@
   right: 0;
   z-index: 1000;
   background-color: $color-background;
-  height: 5.5rem; // add var for this later
+  height: $header-height;
   width: 100%;
 }
