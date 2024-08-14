@@ -28,7 +28,6 @@ function Presentation() {
                 and meticulous work environments. My extensive background in collaborative settings, from startups
                 to large-scale organizations, has equipped me with a solid understanding of team dynamics and the
                 synergy required to succeed.</p>
-            <p className="presentation__text">More info coming soon!</p>
         </div>
     )
 }
