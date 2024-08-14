@@ -13,10 +13,11 @@
 
   &__job-title {
     @include feature-text;
-    margin-block-start: $spacing-xxs;
+    margin-block: $spacing-xxs;
   }
 
   @media (max-width: $breakpoint-tablet) {
     @include grid-child(1, 12);
+    justify-content: flex-start;
   }
 }
