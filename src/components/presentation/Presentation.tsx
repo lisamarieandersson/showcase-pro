@@ -24,10 +24,10 @@ function Presentation() {
                 agile environment. I'm eager to deepen my understanding of these approaches and continue applying them effectively
                 within a team-based setting.</p>
 
-            <p className="presentation__text">Described as humble, intuitive, and creative, I thrive in structured
+            {/*   <p className="presentation__text">Described as humble, intuitive, and creative, I thrive in structured
                 and meticulous work environments. My extensive background in collaborative settings, from startups
                 to large-scale organizations, has equipped me with a solid understanding of team dynamics and the
-                synergy required to succeed.</p>
+                synergy required to succeed.</p> */}
         </div>
     )
 }
