@@ -1,0 +1,50 @@
+@import '../../styles/main.scss';
+
+.navigation-menu {
+  @include inner-grid;
+  padding-block-end: $spacing-xxs;
+
+  &__list {
+    @include grid-child(1, 7);
+    @include menu-text;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include link-style;
+    @include underline-effect;
+
+    &--active {
+      @include active-underline-effect;
+    }
+  }
+
+  @media (max-width: $breakpoint-medium-desktop) {
+    &__list {
+      @include grid-child(1, 10);
+    }
+  }
+
+  @media (max-width: $breakpoint-small-desktop) {
+    &__list {
+      @include grid-child(1, 12);
+      flex-wrap: wrap;
+    }
+  }
+
+  /* 376px */
+  @media (max-width: $breakpoint-extra-small-mobile-plus) {
+    &__list {
+      @include grid-child(1, 11);
+    }
+  }
+
+  /* 320px */
+  @media (max-width: $breakpoint-extra-small-mobile) {
+    &__list {
+      @include grid-child(1, 10);
+    }
+  }
+}
