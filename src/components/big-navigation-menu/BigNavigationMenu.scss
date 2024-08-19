@@ -1,6 +1,6 @@
 @import '../../styles/main.scss';
 
-.navigation-menu {
+.big-navigation-menu {
   @include grid-child(7, 6);
   grid-row: 2;
   display: flex;

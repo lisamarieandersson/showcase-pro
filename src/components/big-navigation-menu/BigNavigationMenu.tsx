@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './NavigationMenu.scss';
+import './BigNavigationMenu.scss';
 
 const links = [
   { path: '/about', label: 'About' },
@@ -8,13 +8,13 @@ const links = [
   { path: '/projects', label: 'Projects' },
 ];
 
-function NavigationMenu() {
+function BigNavigationMenu() {
   return (
-    <nav className="navigation-menu">
-      <ul className="navigation-menu__list">
+    <nav className="big-navigation-menu">
+      <ul className="big-navigation-menu__list">
         {links.map((link, index) => (
-          <li key={index} className="dropdown-menu__item">
-            <Link className="dropdown-menu__link" to={link.path}>
+          <li key={index} className="big-navigation-menu__item">
+            <Link className="big-navigation-menu__link" to={link.path}>
               {link.label}
             </Link>
           </li>
@@ -24,4 +24,4 @@ function NavigationMenu() {
   );
 }
 
-export default NavigationMenu;
+export default BigNavigationMenu;
