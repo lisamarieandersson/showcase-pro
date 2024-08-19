@@ -8,7 +8,7 @@ import './HomePage.scss';
 function HomePage() {
   return (
     <div className="home-page">
-      <Header showDropDownMenu={false} />
+      <Header showNavigationMenu={false} />
       <Intro />
       <BigNavigationMenu />
       <Footer />
