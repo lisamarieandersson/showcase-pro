@@ -3,7 +3,7 @@ import './Presentation.scss';
 function Presentation() {
     return (
         <div className="presentation">
-            <h1 className="presentation__heading">About</h1>
+            {/*  <h1 className="presentation__heading">About</h1> */}
             <h2 className="presentation__intro">Hi, I'm Lisa Marie.
                 Newly graduated Front End Developer with previous experience in design, home furnishing,
                 entrepreneurship and customer relations. </h2>
