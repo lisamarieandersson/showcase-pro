@@ -8,7 +8,7 @@
   justify-content: center;
 
   &__list {
-    @include menu-text;
+    @include big-menu-text;
   }
 
   &__link {
