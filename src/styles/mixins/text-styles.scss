@@ -34,7 +34,7 @@
   }
 }
 
-@mixin menu-text {
+@mixin big-menu-text {
   font-family: 'Crake Light', serif;
   font-weight: 300;
   font-size: 5.625rem; /* 90px */
@@ -48,6 +48,27 @@
 
   @media (max-width: $breakpoint-extra-small-mobile) {
     font-size: 3.375rem; /* 52px */
+  }
+}
+
+@mixin menu-text {
+  font-family: 'Crake Bold', serif;
+  font-weight: 500;
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.2;
+  text-transform: uppercase;
+  list-style-type: none;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  @media (max-width: $breakpoint-small-mobile) {
+    font-size: 1.125rem; /* 18px */
   }
 }
 
@@ -142,6 +163,24 @@
   &:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+  }
+}
+
+@mixin active-underline-effect {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
