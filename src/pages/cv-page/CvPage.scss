@@ -5,7 +5,6 @@
   @include grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  margin-top: $header-height;
 
   &__heading {
     @include h1-large-uppercase;
