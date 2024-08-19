@@ -148,6 +148,6 @@
 @mixin hover-effect {
   transition: transform 0.3s ease-in-out;
   &:hover {
-    transform: translateX(1ch);
+    transform: translateX(0.5ch);
   }
 }
