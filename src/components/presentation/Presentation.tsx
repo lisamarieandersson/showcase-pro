@@ -3,7 +3,7 @@ import './Presentation.scss';
 function Presentation() {
     return (
         <div className="presentation">
-            <h1 className="presentation__heading">About</h1>
+            {/*   <h1 className="presentation__heading">About</h1> */}
             <h2 className="presentation__intro">Hi, I'm Lisa Marie.
                 Newly graduated Front End Developer with previous experience in design, home furnishing,
                 entrepreneurship and customer relations. </h2>
@@ -21,8 +21,7 @@ function Presentation() {
 
             <p className="presentation__text">These recent educational pursuits have also given me a solid grounding in Agile
                 methodologies, particularly in Scrum and Kanban, which I further developed during my previous internship in an
-                agile environment. I'm eager to deepen my understanding of these approaches and continue applying them effectively
-                within a team-based setting.</p>
+                agile environment.</p>
 
             {/*   <p className="presentation__text">Described as humble, intuitive, and creative, I thrive in structured
                 and meticulous work environments. My extensive background in collaborative settings, from startups
