@@ -3,7 +3,7 @@
 .home-page {
   @include content-width;
   @include grid;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$header-height});
   grid-template-rows: auto 1fr auto;
   margin-top: $header-height;
 
