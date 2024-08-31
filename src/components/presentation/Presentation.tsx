@@ -5,7 +5,7 @@ function Presentation() {
         <div className="presentation">
             {/*  <h1 className="presentation__heading">About</h1> */}
             <h2 className="presentation__intro">Hi, I'm Lisa Marie.
-                Newly graduated Front End Developer with previous experience in design, home furnishing,
+                Newly graduated Front-End Developer with previous experience in design, home furnishing,
                 entrepreneurship and customer relations. </h2>
             <p className="presentation__text">I've been passionate about design for my entire life. Having operated
                 my own business in the design sector for nearly a decade, and gaining years of sales and customer
@@ -19,9 +19,9 @@ function Presentation() {
                 in web development, including HTML, CSS, JavaScript, TypeScript, React, Svelte, Next.js, Node.js, Vitest
                 and Figma.</p>
 
-            <p className="presentation__text">These recent educational pursuits have also given me a solid grounding in Agile
-                methodologies, particularly in Scrum and Kanban, which I further developed during my previous internship in an
-                agile environment.</p>
+            <p className="presentation__text">I thrive in agile environments, using Scrum, where collaboration with UX designers,
+                back-end developers, product managers, and end users has been key in solving complex problems and delivering
+                high-quality digital products that balance user needs, technical feasibility, and business goals.</p>
         </div>
     )
 }
