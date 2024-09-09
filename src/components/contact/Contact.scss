@@ -8,7 +8,7 @@
   justify-content: center;
 
   &__heading {
-    @include h1-large;
+    @include h1-large-uppercase;
   }
 
   &__text {
