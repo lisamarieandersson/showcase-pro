@@ -5,7 +5,7 @@ function Presentation() {
         <div className="presentation">
             {/*  <h1 className="presentation__heading">About</h1> */}
             <h2 className="presentation__intro">Hi, I'm Lisa Marie.
-                Newly graduated Front-End Developer with previous experience in design, home furnishing,
+                Newly graduated Frontend Developer with previous experience in design, home furnishing,
                 entrepreneurship and customer relations. </h2>
             <p className="presentation__text">I've been passionate about design for my entire life. Having operated
                 my own business in the design sector for nearly a decade, and gaining years of sales and customer
